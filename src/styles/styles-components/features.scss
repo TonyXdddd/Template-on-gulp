@@ -1,0 +1,30 @@
+@import "../variables.scss";
+
+.features__h {
+  color: white;
+  font-family: "Vidaloka", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 59px;
+  text-align: center;
+  transition: 1s;
+}
+
+.section-features__h_highlight {
+  color: $color-3;
+
+}
+
+.features__items {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features__item-icon {
+  width: 40px;
+  height: 40px;
+  opacity: 70%;
+}
+
+
