@@ -1,34 +1,29 @@
 @import "../variables.scss";
 
 .home__general-h {
-  display: flex;
-  flex-direction: column;
-  margin-top: 170px;
-  font-family: "Backto Black Demo", Fallback, sans-serif;
-  //line-height: 270px;
-  text-align: center;
-  color: $color-1;
-  opacity: 100%;
-  transition: $animation-time;
-  &:hover,
-  &:focus {
-    color: black;
-
-  }
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px;
+    font-family: "Backto Black Demo", Fallback, sans-serif;
+    //line-height: 270px;
+    text-align: center;
+    color: $color-1;
+    opacity: 100%;
+    transition: $animation-time;
+    cursor: default;
+    &:hover,
+    &:focus {
+      color: black;
+    }
 }
 
-
-
-
-
-
 .general-h__first-part {
-  font-size: $font-size2;
+    font-size: $font-size2;
 
 }
 
 .general-h__second-part {
-  margin-top: 30px;
-  font-size: $font-size1;
+    margin-top: 30px;
+    font-size: $font-size1;
 
 }

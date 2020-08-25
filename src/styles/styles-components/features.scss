@@ -1,30 +1,168 @@
 @import "../variables.scss";
 
 .features__h {
-  color: white;
-  font-family: "Vidaloka", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 59px;
-  text-align: center;
-  transition: 1s;
+    color: white;
+    font-family: "Vidaloka", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 59px;
+    text-align: center;
+    transition: 1s;
 }
 
 .section-features__h_highlight {
-  color: $color-3;
+    color: $color-3;
 
 }
 
 .features__items {
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
+    margin: 0 0 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 .features__item-icon {
-  width: 40px;
-  height: 40px;
-  opacity: 70%;
+    align-self: center;
+    //vertical-align: center;
+    width: 40px;
+    height: 40px;
+    opacity: 70%;
+    transition: $animation-time;
+
+  }
+
+.features__item:nth-of-type(1) .features__item-icon {
+    background: url("../../assets/images/static/user-interface.png") no-repeat 50%/ cover;
+    background-size: 100%;
 }
+
+.features__item:nth-of-type(2) .features__item-icon {
+    background: url("../../assets/images/static/expirience.png") no-repeat 50%/ cover;
+    background-size: 100%;
+}
+
+.features__item:nth-of-type(3) .features__item-icon {
+    background: url("../../assets/images/static/modern.png") no-repeat 50%/ cover;
+    background-size: 100%;
+}
+
+.features__item:nth-of-type(4) .features__item-icon {
+    background: url("../../assets/images/static/features.png") no-repeat 50%/ cover;
+    background-size: 100%;
+}
+
+.features__item:nth-of-type(5) .features__item-icon {
+    background: url("../../assets/images/static/collection.png") no-repeat 50%/ cover;
+    background-size: 100%;
+}
+
+.features__item:nth-of-type(6) .features__item-icon {
+    background: url("../../assets/images/static/support.png") no-repeat 50%/ cover;
+    background-size: 100%;
+}
+
+
+
+
+.features__item {
+    width: 260px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 80px 60px 0 0;
+}
+
+
+.features__item-text-wrapper {
+    border-left: 1px solid $color-2;
+    width: 260px;
+    margin-left: 10px;
+    transition: 1s;
+
+}
+
+.features__item-text-wrapper_black-bg {
+    border-left: 1px solid black;
+}
+
+
+.features__item-h {
+    font-size: $font-size8;
+    color: black;
+    transition: $animation-time;
+}
+
+.features__item-description {
+
+    margin-top: 10px;
+    font-size: $font-size12;
+
+    color: black;
+    transition: $animation-time;
+}
+
+.features__item-description_black-bg {
+    color: black;
+
+}
+
+
+
+.features__item:nth-of-type(1):hover  {
+  .features__item-icon {
+    background: url("../../assets/images/static/user-interface-hover.png") no-repeat 50%/ cover;
+    background-size: 100%;
+  }
+
+}
+
+.features__item:nth-of-type(2):hover  {
+  .features__item-icon {
+    background: url("../../assets/images/static/expirience-hover.png") no-repeat 50%/ cover;
+    background-size: 100%;
+  }
+
+}
+
+.features__item:nth-of-type(3):hover  {
+  .features__item-icon {
+    background: url("../../assets/images/static/modern-hover.png") no-repeat 50%/ cover;
+    background-size: 100%;
+  }
+
+}
+
+.features__item:nth-of-type(4):hover  {
+  .features__item-icon {
+    background: url("../../assets/images/static/features-hover.png") no-repeat 50%/ cover;
+    background-size: 100%;
+  }
+
+}
+
+.features__item:nth-of-type(5):hover  {
+  .features__item-icon {
+    background: url("../../assets/images/static/collection-hover.png") no-repeat 50%/ cover;
+    background-size: 100%;
+  }
+
+}
+
+.features__item:nth-of-type(6):hover  {
+  .features__item-icon {
+    background: url("../../assets/images/static/support-hover.png") no-repeat 50%/ cover;
+    background-size: 100%;
+  }
+
+}
+
+.features__item:hover {
+  .features__item-h,
+  .features__item-description {
+    color: $color-3;
+  }
+}
+
 
 
