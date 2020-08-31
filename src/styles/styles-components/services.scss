@@ -15,56 +15,77 @@
   color:$color-1;
   margin: 25px auto 0;
   text-align: center;
+  opacity: 0.65;
 }
 
 .services__items {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  max-width: 85%;
   margin: 80px auto 0;
 
 }
 
 .services__item {
-  padding: 0 20px 20px 0;
-  max-width: 30%;
+  margin: 0 25px 25px 0;
+  padding: 80px 0;
+  width: 28%;
+  opacity: 80%;
+  transition: $animation-time;
+  font-size: $font-size8;
+  color: rgba(255, 255, 255, 0);
   &:nth-of-type(3),
   &:nth-of-type(6) {
-    padding-right: 0;
+    margin-right: 0;
   }
   &:nth-of-type(1) {
-    background: url("../../assets/images/static/") no-repeat 50%/ cover;
+    background: url("../../assets/images/static/services-item-background-1.jpg") no-repeat 50%/ cover;
   }
   &:nth-of-type(2) {
-
+    background: url("../../assets/images/static/services-item-background-3.jpg") no-repeat 50%/ cover;
   }
   &:nth-of-type(3) {
-
+    background: url("../../assets/images/static/services-item-background-2.jpg") no-repeat 50%/ cover;
   }
   &:nth-of-type(4) {
-
+    background: url("../../assets/images/static/services-item-background-4.jpg") no-repeat 50%/ cover;
   }
   &:nth-of-type(5) {
-
+    background: url("../../assets/images/static/services-item-background-5.jpg") no-repeat 50%/ cover;
   }
   &:nth-of-type(6) {
+    background: url("../../assets/images/static/services-item-background-6.jpg") no-repeat 50%/ cover;
+  }
+  &:hover,
+  &:active {
+    transform : scale(1.1);
+    opacity: 90%;
+    box-shadow: 0 0 20px 4px rgba(0,188,212,0.2);
+
+    .services__item-h,
+    .services__item-link {
+    color: rgba(255, 255, 255, 1);
+
+    }
 
   }
 }
 
 .services__item-h {
   text-align: center;
+  transition: 1s;
+  font-family: $font-family2;
 
 }
 
-.services__item-description {
-  margin: 0 auto;
-  text-align: center;
-
-}
 
 .services__item-link {
-  margin: 0 auto;
+  color: rgba(255, 255, 255, 0);
+  display: block;
+  margin: 10px auto 0;
   text-align: center;
-
+  transition: 1s;
+  font-family: $font-family3;
+  text-decoration: underline;
 }
+

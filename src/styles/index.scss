@@ -8,6 +8,7 @@
 @import "styles-components/statistic";
 @import "styles-components/portfolio";
 @import "styles-components/services";
+@import "styles-components/our-team";
 
 html,
 body {
@@ -72,7 +73,12 @@ body {
 
 
 .app__section-services {
-  padding: 80px 20px 80px;
+  padding: 80px 20px 50px;
   background: url("../assets/images/static/statistic-background.jpg") no-repeat 50%/ cover;
   }
+
+.app__section-our-team {
+  padding: 80px 20px 50px;
+
+}
 
