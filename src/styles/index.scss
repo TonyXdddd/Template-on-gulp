@@ -5,6 +5,9 @@
 @import "styles-components/header";
 @import "styles-components/general-h";
 @import "styles-components/features";
+@import "styles-components/statistic";
+@import "styles-components/portfolio";
+@import "styles-components/services";
 
 html,
 body {
@@ -25,8 +28,7 @@ body {
 }
 
 .app__section-home {
-
-    background: url("../assets/images/static/home-background.jpg") no-repeat 100%/ cover;
+    background: url("../assets/images/static/home-background.jpg") no-repeat 50%/ cover;
     transition: 1s;
 }
 
@@ -43,15 +45,34 @@ body {
     }
 }
 
-
-
 .app__section-features {
-    padding: 70px 20px 120px;
+    padding: 60px 20px 120px;
     transition: 1s;
 }
 
 .app__section-features_changed-bg {
     background: black;
+
 }
 
+.app__section-statistic {
+  padding: 80px 20px 80px;
+  background: url("../assets/images/static/statistic-background.jpg") no-repeat 50%/ cover;
+}
+
+
+.app__section-portfolio {
+  padding: 80px 0 50px;
+
+}
+
+.app__section-portfolio_fade-out {
+  display: block;
+}
+
+
+.app__section-services {
+  padding: 80px 20px 80px;
+  background: url("../assets/images/static/statistic-background.jpg") no-repeat 50%/ cover;
+  }
 

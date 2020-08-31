@@ -22,3 +22,7 @@ document.getElementById("general-h").addEventListener("mouseout", function () {
     }
 });
 
+document.getElementById("section-services").addEventListener("mouseover", function () {
+    document.getElementById("section-portfolio").classList.add(".app__section-portfolio_fade-out");
+    console.log(event.target.id);
+});

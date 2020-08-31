@@ -1,0 +1,31 @@
+@import "../variables.scss";
+
+.statistic__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistic__item {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family2;
+  text-align: center;
+}
+
+.statistic__item-icon {
+  max-height: 42px;
+  object-fit: contain;
+}
+
+.statistic__item-number {
+  font-size: $font-size3;
+  color: $color-1;
+  margin-top: 30px;
+}
+
+.statistic__item-description {
+  color: $color-7;
+  font-size: $font-size8;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
