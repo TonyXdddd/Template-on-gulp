@@ -19,9 +19,61 @@
 
 }
 
-.our-team__workers-cards {
+.our-team__items {
   display: flex;
-  margin: 80px auto 0;
+  justify-content: center;
+  margin: 75px auto 0;
 
 }
 
+.our-team__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 26%;
+  border: 1px solid $color-2;
+  margin-right: 40px;
+  &:nth-of-type(3) {
+    margin-right: 0;
+  }
+
+}
+
+.our-team__item-avatar {
+  width: 100%;
+}
+
+.our-team__item-h {
+  margin-top: 15px;
+  color: $color-10;
+  font-family: $font-family2;
+  font-size: $font-size9;
+  text-align: center;
+
+}
+
+.our-team__item-description {
+  margin-top: 20px;
+  color: $color-4;
+  font-family: $font-family3;
+  font-size: $font-size12;
+  text-align: center;
+}
+
+.our-team__item-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.our-team__item-link {
+  text-align: center;
+  width: 9%;
+  margin-right: 4%;
+    &:nth-of-type(3) {
+      margin-right: 0;
+    }
+}
+
+.our-team__item-link-image {
+  width: 100%;
+}
