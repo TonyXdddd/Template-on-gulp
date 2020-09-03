@@ -1,0 +1,54 @@
+@import "../variables.scss";
+
+.contacts__h {
+  color: $color-10;
+  margin: 0 auto;
+}
+
+.contacts__description {
+  color: $color-4;
+  margin: 25px auto 0;
+}
+
+.contacts__form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 0;
+}
+
+.contacts__form-input {
+  display: block;
+  Width: 30%;
+  height: 4.1vh;
+  color: $color-9;
+  outline: none;
+  border: none;
+  border-bottom: 5px solid rgba(0, 188, 212, 0.8);;
+  border-radius: 1%;
+  background-color: transparent;
+  //box-shadow: 0 0 20px 4px rgba(0,188,212,0.2);
+  ;
+}
+
+.contacts__form-button {
+  margin-left: 2%;
+  padding: 0 2.5%;
+  color: $color-1;
+  background-color: $color-3;
+  font-family: $font-family3;
+  font-size: $font-size11;
+  line-height: 33px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 1%;
+  outline: none;
+  transition: $animation-time;
+  &:hover,
+  &:focus {
+    color: $color-3;
+    background-color: transparent;
+  }
+  &:active {
+    opacity: 0.4;
+  }
+}

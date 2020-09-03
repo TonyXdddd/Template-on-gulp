@@ -22,7 +22,32 @@ document.getElementById("general-h").addEventListener("mouseout", function () {
     }
 });
 
-document.getElementById("section-services").addEventListener("mouseover", function () {
-    document.getElementById("section-portfolio").classList.add(".app__section-portfolio_fade-out");
-    console.log(event.target.id);
+let carouselButton1 = document.getElementById("our-clients-button1");
+let carouselButton2 = document.getElementById("our-clients-button2");
+let carouselButton3 = document.getElementById("our-clients-button3");
+
+let activeButton = carouselButton1;
+
+carouselButton1.addEventListener("click", function() {
+    if (activeButton !== carouselButton1) {
+       carousel(carouselButton1, "0");
+    }
 });
+
+carouselButton2.addEventListener("click", function() {
+    if (activeButton !== carouselButton2) {
+        carousel(carouselButton2, "-116.5%");
+    }
+});
+
+carouselButton3.addEventListener("click", function() {
+    if (activeButton !== carouselButton3) {
+        carousel(carouselButton3, "-233%");
+    }
+});
+
+function carousel (newActiveButton, shiftPercent) {
+        activeButton = newActiveButton;
+        document.getElementsByClassName("our-clients__carousel-items")[0].style.transform = `translate(${shiftPercent}, 0)`;
+}
+

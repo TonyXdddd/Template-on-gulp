@@ -1,20 +1,13 @@
 @import "../variables.scss";
 
 .services__h {
-  font-family: $font-family2;
-  font-size: $font-size5;
   color: $color-1;
   margin: 0 auto;
-  text-align: center;
 }
 
 .services__description {
-  font-family: $font-family2;
-  font-size: $font-size9;
-  line-height: 26px;
-  color:$color-1;
+  color: $color-1;
   margin: 25px auto 0;
-  text-align: center;
   opacity: 0.65;
 }
 

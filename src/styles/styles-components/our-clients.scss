@@ -1,2 +1,71 @@
 @import "../variables.scss";
 
+.our-clients__h {
+  color: $color-1;
+
+}
+
+.our-clients__description {
+  margin: 25px auto 0;
+  color: $color-1;
+  opacity: 0.65;
+}
+
+.our-clients__carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 5%;
+}
+
+.our-clients__carousel-items {
+  display: flex;
+  width: 100%;
+  margin: 80px auto 0;
+  flex-wrap: initial;
+  transition: 1s;
+  top: 0;
+  left: 0;
+}
+
+.our-clients__carousel-item {
+  width: 12%;
+  flex-shrink: 0;
+  margin-right: 17.2%;
+  &:nth-of-type(12) {
+    margin-right: 0;
+  }
+}
+
+
+.our-clients__carousel-item-image {
+  width: 100%;
+}
+
+
+.our-clients__carousel-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 0;
+  width: 50%;
+}
+
+.our-clients__carousel-button {
+  display: block;
+  width: 3.5%;
+  height: 2.5vh;
+  margin-right: 2%;
+  border-radius: 5px;
+  color: transparent;
+  border: none;
+  outline: none;
+  transition: $animation-time;
+  &:nth-of-type(3) {
+    margin-right: 0;
+  }
+  opacity: 0.8;
+  &:focus {
+    background-color: $color-7;
+  }
+}
+

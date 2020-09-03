@@ -10,11 +10,27 @@
 @import "styles-components/services";
 @import "styles-components/our-team";
 @import "styles-components/our-clients";
+@import "styles-components/contacts";
 
 html,
 body {
     height: 100%;
 
+}
+
+h2 {
+  font-family: $font-family2;
+  font-size: $font-size5;
+  line-height: 59px;
+  text-align: center;
+}
+
+p {
+  font-family: $font-family2;
+  font-size: $font-size9;
+  line-height: 26px;
+  color: $color-4;
+  text-align: center;
 }
 
 .app {
@@ -84,8 +100,12 @@ body {
 }
 
 .app__section-our-clients {
-  padding: 80px 20px 50px;
+  padding: 80px 20px 80px;
   background: url("../assets/images/static/statistic-background.jpg") no-repeat 50%/ cover;
 }
 
+.app__section-contacts {
+  padding: 80px 20px 80px;
+
+}
 
