@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+@mixin open-burger-menu {
+
+  .section-home__header_open-burger {
+    border-radius: 0;
+    width: 100vw;
+    height: 110vh;
+    left: 0;
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 3;
+
+    .header__burger-button {
+      opacity: 0;
+    }
+
+    .header__menu {
+      flex-direction: column;
+      justify-content: center;
+      opacity: 90;
+    }
+
+    .header__menu-item {
+      display: flex;
+      color: $color-8;
+      font-size: $font-size7;
+      margin: 4vh auto 0;
+      visibility: visible;
+      opacity: 90%;
+    }
+  }
+}
+
+

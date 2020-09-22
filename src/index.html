@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html id="html" lang="eng">
     <head>
         <meta charset="UTF-8">
-        <title>Gulp Boilerplate</title>
-        <meta name="description" content="Gulp Boilerplate">
+        <title>Landing Template</title>
+        <meta name="description" content="Landing Template">
         <!--Favicons BEGIN-->
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/static/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/images/static/favicons/favicon-16x16.png">
@@ -11,38 +11,38 @@
         <link href="styles/index.css" rel="stylesheet" type="text/css" media="all">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     </head>
-    <body>
-
+    <body id="body">
        <div id="app" class="app">
-
+           <div id="scroll-to-top-btn" class="app__scroll-to-top-btn">&#5169;</div>
             <div id="section-home" class="app__section-home">
                 <div id ="bg-changed-wrapper" class="section-home_no-changed-bg">
                     <div class="section__content">
                         <header id="header-wrapper" class="section-home__header">
-                            <nav class="header__menu">
+                            <nav id="header-menu" class="header__menu">
+                                <div id="burger-button" class="header__burger-button"></div>
                                <div class="header__menu-item">
-                                    <a class="header__menu-link">home</a>
+                                    <a href="#section-home" class="header__menu-link">home</a>
                                </div>
                                 <div class="header__menu-item">
-                                    <a class="header__menu-link">features</a>
+                                    <a href="#section-features" class="header__menu-link">features</a>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a class="header__menu-link">statistic</a>
+                                    <a href="#section-statistic" class="header__menu-link">statistic</a>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a class="header__menu-link">portfolio</a>
+                                    <a href="#section-portfolio" class="header__menu-link">portfolio</a>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a class="header__menu-link">services</a>
+                                    <a href="#section-services" class="header__menu-link">services</a>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a class="header__menu-link">our team</a>
+                                    <a href="#section-our-team" class="header__menu-link">our team</a>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a class="header__menu-link">our clients</a>
+                                    <a href="#section-our-clients" class="header__menu-link">our clients</a>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a class="header__menu-link">contacts</a>
+                                    <a href="#section-contacts" class="header__menu-link">contacts</a>
                                 </div>
                             </nav>
                         </header>
@@ -53,12 +53,14 @@
                     </div>
                 </div>
             </div>
-
             <div id="section-features" class="app__section-features">
                 <div class="section__content">
-                    <h2 class="features__h">
+                    <h2 id="features-h" class="features__h">
                         With More Than 10 Years Of Knowledge And Expertise We Design And Code Websites And Apps,
                         <span class="section-features__h_highlight">We Build Brands</span> And Help Them Succeed.
+                    </h2>
+                    <h2 class="features__h-mobile">
+                        We build awesome brands with ...
                     </h2>
                     <div id="features__items" class="features__items">
                         <div id="features-item1" class="features__item">
@@ -118,8 +120,7 @@
                     </div>
                 </div>
             </div>
-
-           <div class="app__section-statistic">
+           <div id="section-statistic" class="app__section-statistic">
                <div class="section__content">
                     <div class="statistic__items">
                         <div class="statistic__item">
@@ -145,7 +146,6 @@
                     </div>
                </div>
            </div>
-
            <div id="section-portfolio" class="app__section-portfolio">
                <div class="section__content">
                     <h2 class="portfolio__h">Creative Portfolio</h2>
@@ -183,7 +183,6 @@
                    <button class="portfolio__learn-more-btn">Learn more</button>
                </div>
            </div>
-
            <div id="section-services" class="app__section-services">
                <div class="section__content">
                    <h2 class="services__h">Services</h2>
@@ -219,8 +218,7 @@
                    </div>
                </div>
            </div>
-
-           <div class="app__section-our-team">
+           <div id="section-our-team"  class="app__section-our-team">
                <div class="section__content">
                    <h2 class="our-team__h">Our Team</h2>
                    <p class="our-team__description">The first requirement for an user experience is to meet the exact needs of the customer.</p>
@@ -276,8 +274,7 @@
                    </div>
                </div>
            </div>
-
-           <div class="app__section-our-clients">
+           <div id="section-our-clients"  class="app__section-our-clients">
                <div class="section__content">
                    <h2 class="our-clients__h">
                        Our Clients
@@ -338,14 +335,15 @@
                             </div>
                         </div>
                        <div class="our-clients__carousel-buttons">
-                           <button autofocus id="our-clients-button1" class="our-clients__carousel-button our-clients__carousel-button_chosen"></button>
+                           <button id="our-clients-button1" class="our-clients__carousel-button our-clients__carousel-button_chosen"></button>
                            <button id="our-clients-button2" class="our-clients__carousel-button"></button>
                            <button id="our-clients-button3" class="our-clients__carousel-button"></button>
                        </div>
                    </div>
+                   <div class="our-clients__mobileScrollHelper">Scroll on your "touch-device"</div>
                </div>
            </div>
-           <div class="app__section-contacts">
+           <div id="section-contacts"  class="app__section-contacts">
                <div class="section__content">
                     <h2 class="contacts__h">Join Us & Free Subscribe</h2>
                     <p class="contacts__description">The first requirement for an user experience is to meet the exact needs of the customer.</p>
@@ -353,24 +351,9 @@
                         <input type="text" placeholder="Your Mail"class="contacts__form-input">
                         <button class="contacts__form-button">Send</button>
                     </form>
-
-
-
                </div>
            </div>
-
-
-
-
        </div>
-
-
-
-
-
-
-
        <script src="./js/index.js"></script>
-
     </body>
 </html>
